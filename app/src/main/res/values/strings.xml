@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">        小王书馆</string>
+    <string name="key_cancel">      取消</string>
+    <string name="key_search">      搜索</string>
+    <string name="key_recommend">   热门推荐</string>
+    <string name="key_history">     搜索历史</string>
+    <string name="key_clear">       清除</string>
+    <string name="key_add">         添加</string>
+    <string name="key_remove">      移除</string>
+    <string name="key_read">        阅读</string>
+    <string name="key_list">        目录</string>
+    <string name="key_cache">       缓存</string>
+    <string name="key_text">        文字</string>
+    <string name="key_night">       夜间</string>
+    <string name="key_sun">         日间</string>
+    <string name="key_chapter_list">章节列表</string>
+    <string name="key_cache_all">   缓存全本</string>
+    <string name="key_loading">     加载中...</string>
+    <string name="tip_remove">      移除本书</string>
+    <string name="tip_order">       置于顶部</string>
+    <string name="tip_cancel_order">取消置顶</string>
+    <string name="tip_none">        暂无数据</string>
+    <string name="tip_search">      快去搜索些好看的书籍吧~</string>
+    <string name="tip_no_open">     该功能暂未开放~</string>
+    <string name="tip_out">         再按一下就退出了哟~</string>
+    <string name="tip_error">       哎呀，好像出现了什么不可抗因素</string>
+    <string name="tip_retry">       点点我，重试下吧~</string>
+    <string name="tip_network">     网络连接不可用，请检查网络配置~</string>
+    <string name="tip_check_update">检查更新中...</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="@dimen/sp_16"
+            android:textSize="@dimen/sp_16"
+            android:drawableLeft="@drawable/ic_arrow_left_24dp"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/key_night"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_outside"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/btn_list"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/key_list"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_list_24dp"
+            android:drawablePadding="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/key_text"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_text_24dp"
+            android:drawablePadding="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/btn_cache"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/key_cache"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_cache_24dp"
+            android:drawablePadding="@dimen/dp_10"/>
+
+        <TextView
+            android:id="@+id/btn_mode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/key_night"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_night_24dp"
+            android:drawablePadding="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+</LinearLayout>

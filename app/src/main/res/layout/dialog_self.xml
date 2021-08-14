@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/radius_top_all">
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/textColor"/>
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_remove"
+        android:textColor="@color/textColor"
+        android:background="?attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/btn_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/key_cache_all"
+        android:textColor="@color/textColor"
+        android:background="?attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_order"
+        android:textColor="@color/textColor"
+        android:background="?attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/key_cancel"
+        android:textColor="@color/textColor"
+        android:background="?attr/selectableItemBackground"/>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/layout_coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/layout_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/background"
+        tools:openDrawer="end">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layout_include"
+                layout="@layout/layout_toolbar"/>
+
+
+            <ImageView
+                android:id="@+id/book_img"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/dp_10"
+                android:src="@mipmap/none"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_include"/>
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/key_loading"
+                android:textSize="@dimen/sp_16"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_search_24dp"
+                android:drawablePadding="5dp"
+                app:layout_constraintLeft_toRightOf="@id/book_img"
+                app:layout_constraintTop_toBottomOf="@id/layout_include"/>
+
+
+            <TextView
+                android:id="@+id/book_update_chapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/key_loading"
+                android:padding="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_10"
+                android:lines="1"
+                android:maxEms="12"
+                android:ellipsize="end"
+                app:layout_constraintTop_toBottomOf="@id/book_author"
+                app:layout_constraintLeft_toRightOf="@id/book_img"/>
+
+
+            <TextView
+                android:id="@+id/book_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/key_loading"
+                android:layout_margin="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                app:layout_constraintTop_toBottomOf="@id/book_update_chapter"
+                app:layout_constraintLeft_toRightOf="@id/book_img"/>
+
+
+            <TextView
+                android:id="@+id/book_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/key_loading"
+                android:layout_margin="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/book_update_chapter"/>
+
+
+            <Button
+                android:id="@+id/book_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/key_add"
+                android:textAlignment="center"
+                android:padding="@dimen/sp_16"
+                android:layout_marginTop="@dimen/sp_12"
+                android:drawableTop="@drawable/ic_add_big"
+                android:drawablePadding="@dimen/dp_10"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:enabled="false"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/book_read"
+                app:layout_constraintTop_toBottomOf="@id/book_img"/>
+
+            <Button
+                android:id="@+id/book_read"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/key_read"
+                android:textAlignment="center"
+                android:padding="@dimen/sp_16"
+                android:layout_marginTop="@dimen/sp_12"
+                android:drawableTop="@drawable/ic_read_big"
+                android:drawablePadding="@dimen/dp_10"
+                android:enabled="false"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/book_edit"
+                app:layout_constraintTop_toBottomOf="@id/book_img"/>
+
+
+            <TextView
+                android:id="@+id/book_desc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/radius_top_all"
+                android:padding="@dimen/dp_10"
+                android:text="@string/key_loading"
+                android:lineSpacingExtra="@dimen/sp_12"
+                android:scrollbars="vertical"
+                app:layout_constraintVertical_weight="1"
+                app:layout_constraintTop_toBottomOf="@id/book_read"
+                app:layout_constraintBottom_toTopOf="@id/layout_bottom"/>
+
+            <LinearLayout
+                android:id="@+id/layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/book_desc"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/btn_chapter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/key_chapter_list"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <View
+                    android:layout_width="0.1sp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"/>
+
+                <Button
+                    android:id="@+id/btn_cache"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/key_cache_all"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/background">
+
+
+            <include
+                layout="@layout/layout_rv_fast_scroll"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">     #333333</color>
+    <color name="colorPrimaryDark"> #333333</color>
+    <color name="background">       #303030</color>
+    <color name="decoration">       #3b3b3b</color>
+    <color name="pale">             #3b3b3b</color>
+    <color name="icoColor">         #cfcfcf</color>
+    <color name="textColor">        #cfcfcf</color>
+</resources>

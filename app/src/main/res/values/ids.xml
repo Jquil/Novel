@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="view_multiple_status" type="id"/>
+
+    <item name="view_type"     type="id"/>
+    <item name="view_position" type="id"/>
+    <item name="view_index"    type="id"/>
+    <item name="text_offset"   type="id"/>
+</resources>
